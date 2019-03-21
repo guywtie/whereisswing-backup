@@ -1,0 +1,69 @@
+<html>
+
+<header>
+    
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-51011501-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-51011501-6');
+</script>
+
+    
+    <style>
+        html,
+        body {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: "futura";
+
+            color: #282828;
+        }
+
+        h3 {
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+
+</header>
+
+<body>
+
+    <h1> Where is Swing? </h1>
+
+    <div id="loader">
+        <img src="loader.gif" height="540" />
+        <h3> HOLD ON WE'LL CHECK </h3>
+    </div>
+
+    <iframe style="display: none" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=e3jdfg5t0bc63u2llums71es5c%40group.calendar.google.com&amp;color=%23865A5A&amp;ctz=America%2FLos_Angeles"
+        style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</body>
+
+<footer>
+
+    <script>
+        window.onload = function () {
+            var loader = document.getElementById("loader");
+            var iframe = document.querySelector("iframe");
+
+            var loadTime = 2000;
+
+            setTimeout(function () {
+                iframe.style.display = "initial";
+                loader.style.display = "none";
+            }, loadTime);
+
+        }
+    </script>
+
+</footer>
+
+</html>
